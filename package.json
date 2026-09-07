@@ -1,8 +1,8 @@
 {
   "name": "wame",
   "version": "1.0.0",
-  "private": true,
-  "description": "Gerador de links diretos para o WhatsApp (wa.me)",
+  "description": "Gerador de links diretos para o WhatsApp (wa.me). SPA em Vanilla JS com Vite, Vitest e Docker.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
