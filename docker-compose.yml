@@ -4,5 +4,5 @@ services:
     container_name: wame-web
     image: wame:latest
     ports:
-      - "${PORT:-8080}:80"
+      - "${PORT:-8080}:8080"
     restart: unless-stopped
