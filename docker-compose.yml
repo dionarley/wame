@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    container_name: wame-web
+    image: wame:latest
+    ports:
+      - "${PORT:-8080}:80"
+    restart: unless-stopped
