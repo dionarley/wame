@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wa.me — Gerador de links WhatsApp</title>
+  <meta
+    name="description"
+    content="Gere links diretos para conversas no WhatsApp com ou sem mensagem."
+  >
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="hero">
+      <div class="logo">wa<span>.me</span></div>
+
+      <div>
+        <h1>Gerador de link WhatsApp</h1>
+        <p>
+          Crie seu link direto para iniciar uma conversa no WhatsApp.
+        </p>
+      </div>
+    </header>
+
+    <section class="card">
+
+      <div class="form">
+
+        <div class="field">
+          <label for="country">País</label>
+
+          <select id="country">
+            <option value="55">🇧🇷 Brasil (+55)</option>
+            <option value="1">🇺🇸 Estados Unidos (+1)</option>
+            <option value="351">🇵🇹 Portugal (+351)</option>
+            <option value="34">🇪🇸 Espanha (+34)</option>
+            <option value="44">🇬🇧 Reino Unido (+44)</option>
+            <option value="49">🇩🇪 Alemanha (+49)</option>
+          </select>
+        </div>
+
+        <div class="number-row">
+
+          <div class="field ddd-field">
+            <label for="ddd">DDD</label>
+
+            <input
+              id="ddd"
+              type="text"
+              inputmode="numeric"
+              maxlength="3"
+              placeholder="38"
+              autocomplete="tel"
+            >
+          </div>
+
+          <div class="field number-field">
+            <label for="phone">Número</label>
+
+            <input
+              id="phone"
+              type="text"
+              inputmode="numeric"
+              placeholder="99999-9999"
+              autocomplete="tel"
+            >
+          </div>
+
+        </div>
+
+        <div class="field">
+
+          <div class="label-row">
+            <label for="message">
+              Mensagem
+              <span class="optional">opcional</span>
+            </label>
+
+            <span id="counter">0/1000</span>
+          </div>
+
+          <textarea
+            id="message"
+            maxlength="1000"
+            rows="5"
+            placeholder="Olá! Gostaria de saber mais sobre..."
+          ></textarea>
+
+        </div>
+
+      </div>
+
+      <div class="result">
+
+        <div class="result-header">
+          <span>Seu link</span>
+
+          <span id="status" class="status">
+            Aguardando número
+          </span>
+        </div>
+
+        <div class="link-preview">
+          <span id="generatedLink">
+            https://wa.me/
+          </span>
+        </div>
+
+        <div class="actions">
+
+          <button
+            id="copyButton"
+            class="button secondary"
+            type="button"
+            disabled
+          >
+            <span>⧉</span>
+            Copiar
+          </button>
+
+          <button
+            id="openButton"
+            class="button primary"
+            type="button"
+            disabled
+          >
+            Abrir WhatsApp
+            <span>↗</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <span>Vanilla JS</span>
+      <span>•</span>
+      <span>SPA</span>
+      <span>•</span>
+      <span>Sem dependências</span>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+
